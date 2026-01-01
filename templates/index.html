@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>APT Detection System</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Plotly (for charts) -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- Socket.IO client -->
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" integrity="" crossorigin="anonymous"></script>
+
+    <style>
+      body { background: #f8f9fa; }
+      .app-header { padding: 2rem 1rem; background: #fff; border-bottom: 1px solid #e9ecef; }
+      .app-title { font-weight: 700; letter-spacing: -1px; }
+      .card-compact { padding: .75rem; }
+      .table-wrapper { max-height: 360px; overflow: auto; }
+      .rotate-label { transform: rotate(-45deg); transform-origin: left bottom; }
+      .small-muted { font-size: .9rem; color: #6c757d; }
+    </style>
+  </head>
+  <body>
+
+    <header class="app-header mb-3">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <h3 class="small-muted">fait par Fradj DORBEZ - Hamza OUNI - Ange KOUASSI</h3>
+            <h1 class="app-title display-5">Système d’Analyse des Activités Réseau Malveillantes</h1>
+            
+          </div>
+          <div>
+            <button id="btn-start" class="btn btn-success me-2">Start Capture</button>
+            <button id="btn-stop" class="btn btn-outline-secondary">Stop</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container-fluid">
+      <div class="row g-3">
+        <!-- Left: visualization -->
+        <div class="col-lg-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Top Source IPs</h5>
+              <div id="ips-chart" style="height:360px;"></div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Recent Flows</h5>
+              <div class="table-wrapper">
+                <table class="table table-striped table-sm" id="flows-table">
+                  <thead class="table-light sticky-top">
+                    <tr>
+                      <th>Flow ID</th>
+                      <th>Src IP</th>
+                      <th>Src Port</th>
+                      <th>Dst IP</th>
+                      <th>Dst Port</th>
+                      <th>Protocol</th>
+                      <th>Start</th>
+                      <th>Last Seen</th>
+                      <th>Prob</th>
+                      <th>Prediction</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {%- for row in initial_flows if initial_flows is defined -%}
+                    <tr data-flow-id="{{ row[0] }}">
+                      <td>{{ row[0] }}</td>
+                      <td>{{ row[1] }}</td>
+                      <td>{{ row[2] }}</td>
+                      <td>{{ row[3] }}</td>
+                      <td>{{ row[4] }}</td>
+                      <td>{{ row[5] }}</td>
+                      <td>{{ row[6] }}</td>
+                      <td>{{ row[7] }}</td>
+                      <td>{{ row[9] }}</td>
+                      <td>{{ row[10] }}</td>
+                      <td><button class="btn btn-sm btn-link view-detail">Detail</button></td>
+                    </tr>
+                    {%- endfor -%}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: status and controls -->
+        <div class="col-lg-4">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h6 class="card-title">System Status</h6>
+              <ul class="list-unstyled mb-0">
+                <li><strong>Capture:</strong> <span id="status-capture">Stopped</span></li>
+                <li><strong>Flows processed:</strong> <span id="status-flows">0</span></li>
+                <li><strong>Detections:</strong> <span id="status-alerts">0</span></li>
+                <li><strong>Last update:</strong> <span id="status-last">-</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h6 class="card-title">Quick Actions</h6>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" id="btn-download">Download CSV</button>
+                <button class="btn btn-outline-danger" id="btn-clear">Clear Table</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">Top Alerts</h6>
+              <div id="alerts-list">
+                <div class="text-muted">No alerts yet</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Detail modal -->
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Flow details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <pre id="detail-content" style="white-space:pre-wrap;"></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // --- small helpers ---
+      function formatDate(ts) {
+        try {
+          let d = new Date(ts);
+          return d.toLocaleString();
+        } catch(e) { return ts; }
+      }
+
+      // Plotly initial empty chart
+      const ipsData = { x: [], y: [], type: 'bar', marker: {opacity:0.8} };
+      const ipsLayout = { margin:{t:20,r:10,l:40,b:120}, xaxis:{tickangle:-45}, yaxis:{title:'Count'} };
+      Plotly.newPlot('ips-chart', [ipsData], ipsLayout, {responsive:true});
+
+      // Table helpers
+      function addFlowRow(arr) {
+        // arr expected: [flow_id, src_ip, src_port, dst_ip, dst_port, proto, start, last_seen, pred, prob, risk]
+        const tbody = document.querySelector('#flows-table tbody');
+        const tr = document.createElement('tr');
+        tr.setAttribute('data-flow-id', arr[0]);
+        tr.innerHTML = `
+          <td>${arr[0]}</td>
+          <td>${arr[1]}</td>
+          <td>${arr[2]}</td>
+          <td>${arr[3]}</td>
+          <td>${arr[4]}</td>
+          <td>${arr[5]}</td>
+          <td>${formatDate(arr[6])}</td>
+          <td>${formatDate(arr[7])}</td>
+          <td>${arr[9]}</td>
+          <td>${arr[10]}</td>
+          <td><button class="btn btn-sm btn-link view-detail">Detail</button></td>
+        `;
+        tbody.prepend(tr);
+        // Keep only last 200 rows to avoid blowup
+        while (tbody.rows.length > 200) tbody.deleteRow(tbody.rows.length-1);
+      }
+
+      // Update IP chart
+      function updateIPChart(ipCounts) {
+        // ipCounts: [{SourceIP: '1.2.3.4', count: 12}, ...]
+        const sorted = ipCounts.slice().sort((a,b)=>b.count-a.count).slice(0,12);
+        const xs = sorted.map(o=>o.SourceIP);
+        const ys = sorted.map(o=>o.count);
+        Plotly.react('ips-chart', [{x: xs, y: ys, type:'bar'}], ipsLayout);
+      }
+
+            // Socket.IO connect to namespace /test (as used in server)
+      const socket = io('/test');
+
+      // capture flag: si false, on ignore les newresult reçus
+      let captureRunning = false; // par défaut arrêté
+
+      // helper to update UI state of Start/Stop
+      function updateCaptureButtons() {
+        const startBtn = document.getElementById('btn-start');
+        const stopBtn = document.getElementById('btn-stop');
+        if (captureRunning) {
+          startBtn.classList.add('disabled');
+          startBtn.setAttribute('disabled','');
+          stopBtn.classList.remove('disabled');
+          stopBtn.removeAttribute('disabled');
+        } else {
+          stopBtn.classList.add('disabled');
+          stopBtn.setAttribute('disabled','');
+          startBtn.classList.remove('disabled');
+          startBtn.removeAttribute('disabled');
+        }
+        document.getElementById('status-capture').textContent = captureRunning ? 'Running' : 'Stopped';
+      }
+
+      socket.on('connect', () => {
+        console.log('socket connected');
+        // mettre l'état des boutons en fonction du flag
+        updateCaptureButtons();
+      });
+
+      socket.on('disconnect', () => {
+        console.log('socket disconnected');
+      });
+
+      socket.on('newresult', (data) => {
+        // Si on n'est pas en capture, on ignore l'événement
+        if (!captureRunning) {
+          // Optionnel : log pour debug
+          // console.debug('newresult ignored because capture stopped', data);
+          return;
+        }
+        //console.log("NEWRESULT:", data);
+
+        // Defensive parse: server may send different shapes
+        try {
+          // update last timestamp
+          document.getElementById('status-last').textContent = new Date().toLocaleTimeString();
+
+          // increment flows count
+          const flowsEl = document.getElementById('status-flows');
+          flowsEl.textContent = parseInt(flowsEl.textContent || '0') + 1;
+
+          // update ip chart if ips provided
+          if (data.ips) {
+            let ips = data.ips;
+            // if ips is a JSON string, try parse
+            if (typeof ips === 'string') {
+              try { ips = JSON.parse(ips); } catch(e){}
+            }
+            if (Array.isArray(ips)) updateIPChart(ips);
+          }
+
+          // attempt to extract flow result row
+          let result = data.result || data;
+          if (Array.isArray(result)) {
+            // try to map to our table columns (best-effort)
+            const flow_id = result[0] || '';
+            const src_ip = result[1] || result[2] || '';
+            const src_port = result[2] || '';
+            const dst_ip = result[3] || '';
+            const dst_port = result[4] || '';
+            const proto = result[5] || '';
+            const start = result[6] || '';
+            const last = result[7] || '';
+            const pred = (result.slice(-4)[0]) || '—';
+            const risk = (result.slice(-3)[0]) || '—';
+            const prob = (result.slice(-2)[0]) || '—';
+            addFlowRow([flow_id, src_ip, src_port, dst_ip, dst_port, proto, start, last, pred, prob, risk]);
+
+            // if prediction is not benign, add to alerts
+            if (typeof pred === 'string' && pred.toLowerCase() !== 'benign') {
+              const alerts = document.getElementById('alerts-list');
+              const el = document.createElement('div');
+              el.innerHTML = `<div><strong>${pred}</strong> from <code>${src_ip}</code> → <code>${dst_ip}</code> <small class="text-muted">(${prob})</small></div>`;
+              alerts.prepend(el);
+              document.getElementById('status-alerts').textContent = parseInt(document.getElementById('status-alerts').textContent||'0')+1;
+            }
+          }
+
+        } catch (e) {
+          console.warn('Error processing newresult', e, data);
+        }
+      });
+
+      // Delegate click for Detail buttons
+      document.addEventListener('click', (ev)=>{
+        if (ev.target && ev.target.classList.contains('view-detail')){
+          const tr = ev.target.closest('tr');
+          const cells = Array.from(tr.querySelectorAll('td')).map(td=>td.textContent);
+          document.getElementById('detail-content').textContent = JSON.stringify(cells, null, 2);
+          const modal = new bootstrap.Modal(document.getElementById('detailModal'));
+          modal.show();
+        }
+      });
+
+      // Buttons (client-side handlers)
+      document.getElementById('btn-clear').addEventListener('click', ()=>{
+        const tbody = document.querySelector('#flows-table tbody'); tbody.innerHTML = '';
+        document.getElementById('status-flows').textContent = '0';
+      });
+
+      document.getElementById('btn-download').addEventListener('click', ()=>{
+        // download visible table as CSV
+        const rows = Array.from(document.querySelectorAll('#flows-table tbody tr')).map(tr=>Array.from(tr.querySelectorAll('td')).map(td=>'"'+td.textContent.replace(/"/g,'""')+'"').join(','));
+        const csv = [Array.from(document.querySelectorAll('#flows-table thead th')).map(th=>'"'+th.textContent+'"').join(','), ...rows].join('\n');
+        const blob = new Blob([csv], {type:'text/csv'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a'); a.href = url; a.download = 'flows.csv'; a.click(); URL.revokeObjectURL(url);
+      });
+
+      // Start/stop hooks (emit to server if endpoints exist) + local pause
+      document.getElementById('btn-start').addEventListener('click', ()=>{
+        // start local processing
+        captureRunning = true;
+        updateCaptureButtons();
+        // inform server (if server handles it)
+        socket.emit('control', {action:'start'}, (ack)=>{ console.log('ack start', ack); });
+      });
+      document.getElementById('btn-stop').addEventListener('click', ()=>{
+        // stop local processing (ignore future events)
+        captureRunning = false;
+        updateCaptureButtons();
+        // inform server (if server handles it)
+        socket.emit('control', {action:'stop'}, (ack)=>{ console.log('ack stop', ack); });
+      });
+
+      // initialize UI (ensure correct enable/disable at load)
+      updateCaptureButtons();
+
+
+    </script>
+  </body>
+</html>
