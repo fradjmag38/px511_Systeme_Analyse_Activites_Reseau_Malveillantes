@@ -1,0 +1,512 @@
+[1 - Suricata-Main] 2025-06-17 17:21:15 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-17 17:21:15 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-17 17:21:15 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-17 17:21:15 Info: exception-policy: master exception-policy set to: auto
+[1 - Suricata-Main] 2025-06-17 17:21:16 Info: conf: Running in live mode, activating unix socket
+[1 - Suricata-Main] 2025-06-17 17:21:16 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-06-17 17:21:16 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-17 17:21:16 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-17 17:21:18 Info: detect-fast-pattern: fast_pattern is ineffective with base64_data
+[1 - Suricata-Main] 2025-06-17 17:21:18 Info: detect-fast-pattern: fast_pattern is ineffective with base64_data
+[1 - Suricata-Main] 2025-06-17 17:21:18 Info: detect: 1 rule files processed. 42614 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-17 17:21:18 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-17 17:21:19 Info: detect: 42617 signatures processed. 1270 are IP-only rules, 4333 are inspecting packet payload, 36797 inspect application layer, 109 are decoder event only
+[1 - Suricata-Main] 2025-06-17 17:21:28 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-17 17:21:28 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-17 17:21:28 Info: unix-manager: unix socket '/var/run/suricata/suricata-command.socket'
+[1 - Suricata-Main] 2025-06-17 17:21:29 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-17 17:55:11 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-17 17:55:12 Info: suricata: time elapsed 2023.806s
+[1 - Suricata-Main] 2025-06-17 17:55:12 Info: counters: Alerts: 0
+[1 - Suricata-Main] 2025-06-17 17:55:14 Notice: device: eth0: packets: 4, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-17 17:55:36 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-17 17:55:36 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-17 17:55:36 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-17 17:55:36 Info: exception-policy: master exception-policy set to: auto
+[1 - Suricata-Main] 2025-06-17 17:55:36 Info: conf: Running in live mode, activating unix socket
+[1 - Suricata-Main] 2025-06-17 17:55:36 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-06-17 17:55:36 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-17 17:55:36 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-17 17:55:38 Info: detect-fast-pattern: fast_pattern is ineffective with base64_data
+[1 - Suricata-Main] 2025-06-17 17:55:38 Info: detect-fast-pattern: fast_pattern is ineffective with base64_data
+[1 - Suricata-Main] 2025-06-17 17:55:38 Info: detect: 1 rule files processed. 42614 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-17 17:55:39 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-17 17:55:39 Info: detect: 42617 signatures processed. 1270 are IP-only rules, 4333 are inspecting packet payload, 36797 inspect application layer, 109 are decoder event only
+[1 - Suricata-Main] 2025-06-17 17:55:46 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-17 17:55:46 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-17 17:55:46 Info: unix-manager: unix socket '/var/run/suricata/suricata-command.socket'
+[1 - Suricata-Main] 2025-06-17 17:55:47 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-17 18:18:43 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-17 18:18:43 Info: suricata: time elapsed 1376.880s
+[1 - Suricata-Main] 2025-06-17 18:18:44 Info: counters: Alerts: 0
+[1 - Suricata-Main] 2025-06-17 18:18:44 Notice: device: eth0: packets: 9, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-17 18:18:57 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-17 18:18:57 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-17 18:18:57 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-17 18:18:57 Info: exception-policy: master exception-policy set to: auto
+[1 - Suricata-Main] 2025-06-17 18:18:57 Info: conf: Running in live mode, activating unix socket
+[1 - Suricata-Main] 2025-06-17 18:18:57 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-06-17 18:18:57 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-17 18:18:57 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-17 18:18:59 Info: detect-fast-pattern: fast_pattern is ineffective with base64_data
+[1 - Suricata-Main] 2025-06-17 18:18:59 Info: detect-fast-pattern: fast_pattern is ineffective with base64_data
+[1 - Suricata-Main] 2025-06-17 18:18:59 Info: detect: 1 rule files processed. 42614 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-17 18:19:00 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-17 18:19:00 Info: detect: 42617 signatures processed. 1270 are IP-only rules, 4333 are inspecting packet payload, 36797 inspect application layer, 109 are decoder event only
+[1 - Suricata-Main] 2025-06-17 18:19:07 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-17 18:19:07 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-17 18:19:07 Info: unix-manager: unix socket '/var/run/suricata/suricata-command.socket'
+[1 - Suricata-Main] 2025-06-17 18:19:07 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-17 18:56:38 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-17 18:56:38 Info: suricata: time elapsed 2251.521s
+[1 - Suricata-Main] 2025-06-17 18:56:39 Info: counters: Alerts: 112
+[1 - Suricata-Main] 2025-06-17 18:56:41 Notice: device: eth0: packets: 66440, drops: 43 (0.06%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-21 08:21:05 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-21 08:21:05 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-21 08:21:05 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-21 08:21:05 Info: exception-policy: master exception-policy set to: auto
+[1 - Suricata-Main] 2025-06-21 08:21:05 Info: conf: Running in live mode, activating unix socket
+[1 - Suricata-Main] 2025-06-21 08:21:05 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-06-21 08:21:05 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-21 08:21:05 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-21 08:21:08 Info: detect-fast-pattern: fast_pattern is ineffective with base64_data
+[1 - Suricata-Main] 2025-06-21 08:21:08 Info: detect-fast-pattern: fast_pattern is ineffective with base64_data
+[1 - Suricata-Main] 2025-06-21 08:21:08 Info: detect: 1 rule files processed. 42614 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-21 08:21:08 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-21 08:21:08 Info: detect: 42617 signatures processed. 1270 are IP-only rules, 4333 are inspecting packet payload, 36797 inspect application layer, 109 are decoder event only
+[1 - Suricata-Main] 2025-06-21 08:21:14 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-21 08:21:14 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-21 08:21:14 Info: unix-manager: unix socket '/var/run/suricata/suricata-command.socket'
+[1 - Suricata-Main] 2025-06-21 08:21:15 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-21 08:22:32 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-21 08:22:32 Info: suricata: time elapsed 78.714s
+[1 - Suricata-Main] 2025-06-21 08:22:34 Info: counters: Alerts: 0
+[1 - Suricata-Main] 2025-06-21 08:22:34 Notice: device: eth0: packets: 7015, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-21 08:22:47 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-21 08:22:47 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-21 08:22:47 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-21 08:22:47 Info: exception-policy: master exception-policy set to: auto
+[1 - Suricata-Main] 2025-06-21 08:22:47 Info: conf: Running in live mode, activating unix socket
+[1 - Suricata-Main] 2025-06-21 08:22:47 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-06-21 08:22:47 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-21 08:22:47 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-21 08:22:50 Info: detect-fast-pattern: fast_pattern is ineffective with base64_data
+[1 - Suricata-Main] 2025-06-21 08:22:50 Info: detect-fast-pattern: fast_pattern is ineffective with base64_data
+[1 - Suricata-Main] 2025-06-21 08:22:50 Info: detect: 1 rule files processed. 42614 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-21 08:22:50 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-21 08:22:50 Info: detect: 42617 signatures processed. 1270 are IP-only rules, 4333 are inspecting packet payload, 36797 inspect application layer, 109 are decoder event only
+[1 - Suricata-Main] 2025-06-21 08:22:58 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-21 08:22:58 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-21 08:22:59 Info: unix-manager: unix socket '/var/run/suricata/suricata-command.socket'
+[1 - Suricata-Main] 2025-06-21 08:22:59 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-21 08:23:42 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-21 08:23:42 Info: suricata: time elapsed 44.170s
+[1 - Suricata-Main] 2025-06-21 08:23:44 Info: counters: Alerts: 0
+[1 - Suricata-Main] 2025-06-21 08:23:44 Notice: device: eth0: packets: 6036, drops: 240 (3.98%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-21 08:24:16 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-21 08:24:16 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-21 08:24:16 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-21 08:24:16 Info: exception-policy: master exception-policy set to: auto
+[1 - Suricata-Main] 2025-06-21 08:24:16 Info: conf: Running in live mode, activating unix socket
+[1 - Suricata-Main] 2025-06-21 08:24:16 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-06-21 08:24:16 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-21 08:24:16 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-21 08:24:18 Info: detect-fast-pattern: fast_pattern is ineffective with base64_data
+[1 - Suricata-Main] 2025-06-21 08:24:18 Info: detect-fast-pattern: fast_pattern is ineffective with base64_data
+[1 - Suricata-Main] 2025-06-21 08:24:18 Info: detect: 1 rule files processed. 42614 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-21 08:24:18 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-21 08:24:19 Info: detect: 42617 signatures processed. 1270 are IP-only rules, 4333 are inspecting packet payload, 36797 inspect application layer, 109 are decoder event only
+[1 - Suricata-Main] 2025-06-21 08:24:26 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-21 08:24:26 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-21 08:24:26 Info: unix-manager: unix socket '/var/run/suricata/suricata-command.socket'
+[1 - Suricata-Main] 2025-06-21 08:24:26 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-21 08:51:53 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-21 08:51:54 Info: suricata: time elapsed 1648.124s
+[1 - Suricata-Main] 2025-06-21 08:51:55 Info: counters: Alerts: 117
+[1 - Suricata-Main] 2025-06-21 08:51:55 Notice: device: eth0: packets: 111391, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-21 08:52:06 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-21 08:52:06 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-21 08:52:06 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-21 08:52:06 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-21 08:52:06 Error: detect: address var - "EXTERNAL_NET" has the complete IP space negated with its value "!$HOME_NET".  Rule address range is NIL. Probably have a !any or an address range that supplies a NULL address range
+[1 - Suricata-Main] 2025-06-21 08:52:06 Error: suricata: basic address vars test failed. Please check /etc/suricata/suricata.yaml for errors
+[1 - Suricata-Main] 2025-06-21 08:54:01 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-21 08:54:01 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-21 08:54:01 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-21 08:54:01 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-21 08:54:01 Error: detect: address var - "EXTERNAL_NET" has the complete IP space negated with its value "!$HOME_NET".  Rule address range is NIL. Probably have a !any or an address range that supplies a NULL address range
+[1 - Suricata-Main] 2025-06-21 08:54:01 Error: suricata: basic address vars test failed. Please check /etc/suricata/suricata.yaml for errors
+[1 - Suricata-Main] 2025-06-21 09:02:46 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-21 09:02:46 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-21 09:02:46 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-21 09:02:46 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-21 09:02:46 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-21 09:02:46 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-21 09:02:46 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-21 09:02:46 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-21 09:02:46 Error: detect-parse: Duplicate signature "alert ip any any -> any any (msg:"Test Alerte Suricata"; sid:1000001; rev:1;)"
+[1 - Suricata-Main] 2025-06-21 09:02:46 Error: detect: error parsing signature "alert ip any any -> any any (msg:"Test Alerte Suricata"; sid:1000001; rev:1;)" from file /etc/suricata/rules/custom.rules at line 4
+[1 - Suricata-Main] 2025-06-21 09:02:46 Error: detect-parse: Duplicate signature "alert tcp any any -> any any (msg:"Nmap TCP Scan Detected"; flags:S; threshold:type threshold, track by_src, count 20, seconds 10; classtype:attempted-recon; sid:1000001; rev:1;)"
+[1 - Suricata-Main] 2025-06-21 09:02:46 Error: detect: error parsing signature "alert tcp any any -> any any (msg:"Nmap TCP Scan Detected"; flags:S; threshold:type threshold, track by_src, count 20, seconds 10; classtype:attempted-recon; sid:1000001; rev:1;)" from file /etc/suricata/rules/custom.rules at line 5
+[1 - Suricata-Main] 2025-06-21 09:02:46 Info: detect: 1 rule files processed. 3 rules successfully loaded, 2 rules failed, 0
+[1 - Suricata-Main] 2025-06-21 09:02:46 Error: suricata: Loading signatures failed.
+[1 - Suricata-Main] 2025-06-21 09:07:51 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-21 09:07:51 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-21 09:07:51 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-21 09:07:51 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-21 09:07:51 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-21 09:07:51 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-21 09:07:51 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-21 09:07:51 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-21 09:07:51 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-21 09:07:51 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-21 09:07:51 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-21 09:07:51 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-21 09:07:51 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-21 09:07:51 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-23 06:48:41 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-23 06:48:41 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-23 06:48:41 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-23 06:48:41 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-23 06:48:41 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-23 06:48:41 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-23 06:48:41 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-23 06:48:41 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-23 06:48:41 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-23 06:48:41 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-23 06:48:41 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-23 06:48:41 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-23 06:48:41 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-23 06:48:42 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-23 06:48:44 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-23 06:48:45 Info: suricata: time elapsed 4.076s
+[1 - Suricata-Main] 2025-06-23 06:48:46 Info: counters: Alerts: 68
+[1 - Suricata-Main] 2025-06-23 06:48:46 Notice: device: eth0: packets: 1332, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-23 06:49:05 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-23 06:49:05 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-23 06:49:05 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-23 06:49:05 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-23 06:49:05 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-23 06:49:05 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-23 06:49:05 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-23 06:49:05 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-23 06:49:05 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-23 06:49:05 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-23 06:49:05 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-23 06:49:05 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-23 06:49:05 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-23 06:49:05 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-23 07:36:10 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-23 07:36:10 Info: suricata: time elapsed 2825.657s
+[1 - Suricata-Main] 2025-06-23 07:36:11 Info: counters: Alerts: 18813
+[1 - Suricata-Main] 2025-06-23 07:36:11 Notice: device: eth0: packets: 155603, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-23 07:36:12 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-23 07:36:12 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-23 07:36:12 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-23 07:36:12 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-23 07:36:12 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-23 07:36:12 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-23 07:36:12 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-23 07:36:12 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-23 07:36:12 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-23 07:36:12 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-23 07:36:12 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-23 07:36:12 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-23 07:36:12 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-23 07:36:13 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-23 07:36:15 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-23 07:36:16 Info: suricata: time elapsed 4.037s
+[1 - Suricata-Main] 2025-06-23 07:36:17 Info: counters: Alerts: 75
+[1 - Suricata-Main] 2025-06-23 07:36:17 Notice: device: eth0: packets: 517, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-23 07:36:18 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-23 07:36:18 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-23 07:36:18 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-23 07:36:18 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-23 07:36:18 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-23 07:36:18 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-23 07:36:18 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-23 07:36:18 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-23 07:36:18 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-23 07:36:18 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-23 07:36:18 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-23 07:36:18 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-23 07:36:18 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-23 07:36:18 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-23 07:36:30 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-23 07:36:30 Info: suricata: time elapsed 12.923s
+[1 - Suricata-Main] 2025-06-23 07:36:31 Info: counters: Alerts: 85
+[1 - Suricata-Main] 2025-06-23 07:36:31 Notice: device: eth0: packets: 605, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-23 07:36:32 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-23 07:36:32 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-23 07:36:32 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-23 07:36:32 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-23 07:36:32 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-23 07:36:32 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-23 07:36:32 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-23 07:36:32 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-23 07:36:32 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-23 07:36:32 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-23 07:36:32 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-23 07:36:32 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-23 07:36:32 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-23 07:36:33 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-23 07:36:35 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-23 07:36:35 Info: suricata: time elapsed 3.111s
+[1 - Suricata-Main] 2025-06-23 07:36:36 Info: counters: Alerts: 69
+[1 - Suricata-Main] 2025-06-23 07:36:36 Notice: device: eth0: packets: 534, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-23 07:36:39 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-23 07:36:39 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-23 07:36:39 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-23 07:36:39 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-23 07:36:39 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-23 07:36:39 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-23 07:36:39 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-23 07:36:39 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-23 07:36:39 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-23 07:36:39 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-23 07:36:39 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-23 07:36:39 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-23 07:36:39 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-23 07:36:39 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-23 07:36:41 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-23 07:36:41 Info: suricata: time elapsed 2.063s
+[1 - Suricata-Main] 2025-06-23 07:36:42 Info: counters: Alerts: 6
+[1 - Suricata-Main] 2025-06-23 07:36:42 Notice: device: eth0: packets: 53, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-23 07:36:42 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-23 07:36:42 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-23 07:36:42 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-23 07:36:42 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-23 07:36:42 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-23 07:36:42 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-23 07:36:42 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-23 07:36:42 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-23 07:36:42 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-23 07:36:42 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-23 07:36:42 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-23 07:36:43 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-23 07:36:43 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-23 07:36:43 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-23 09:56:36 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-23 09:56:37 Info: suricata: time elapsed 8394.699s
+[1 - Suricata-Main] 2025-06-23 09:56:40 Info: counters: Alerts: 40911
+[1 - Suricata-Main] 2025-06-23 09:56:40 Notice: device: eth0: packets: 1785557, drops: 953 (0.05%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-23 09:56:51 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-23 09:56:51 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-23 09:56:51 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-23 09:56:51 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-23 09:56:51 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-23 09:56:51 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-23 09:56:51 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-23 09:56:51 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-23 09:56:51 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-23 09:56:51 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-23 09:56:51 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-23 09:56:51 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-23 09:56:51 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-23 09:56:52 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-23 11:08:52 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-23 11:08:52 Info: suricata: time elapsed 4320.928s
+[1 - Suricata-Main] 2025-06-23 11:08:53 Info: counters: Alerts: 28986
+[1 - Suricata-Main] 2025-06-23 11:08:53 Notice: device: eth0: packets: 1280330, drops: 4778 (0.37%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-23 11:09:24 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-23 11:09:24 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-23 11:09:24 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-23 11:09:24 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-23 11:09:24 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-23 11:09:24 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-23 11:09:24 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-23 11:09:24 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-23 11:09:24 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-23 11:09:24 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-23 11:09:24 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-23 11:09:24 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-23 11:09:24 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-23 11:09:25 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-23 11:10:48 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-23 11:10:48 Info: suricata: time elapsed 84.622s
+[1 - Suricata-Main] 2025-06-23 11:10:49 Info: counters: Alerts: 709
+[1 - Suricata-Main] 2025-06-23 11:10:50 Notice: device: eth0: packets: 30610, drops: 131 (0.43%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-23 11:11:22 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-23 11:11:22 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-23 11:11:22 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-23 11:11:22 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-23 11:11:22 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-23 11:11:22 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-23 11:11:22 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-23 11:11:22 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-23 11:11:22 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-23 11:11:22 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-23 11:11:22 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-23 11:11:22 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-23 11:11:22 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-23 11:11:23 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-23 11:11:25 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-23 11:11:28 Info: suricata: time elapsed 5.965s
+[1 - Suricata-Main] 2025-06-23 11:11:29 Info: counters: Alerts: 46
+[1 - Suricata-Main] 2025-06-23 11:11:30 Notice: device: eth0: packets: 1258, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-23 11:12:03 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-23 11:12:03 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-23 11:12:03 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-23 11:12:03 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-23 11:12:03 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-23 11:12:03 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-23 11:12:03 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-23 11:12:03 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-23 11:12:03 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-23 11:12:03 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-23 11:12:03 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-23 11:12:03 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-23 11:12:03 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-23 11:12:04 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-23 11:38:31 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-23 11:38:32 Info: suricata: time elapsed 1588.539s
+[1 - Suricata-Main] 2025-06-23 11:38:33 Info: counters: Alerts: 11093
+[1 - Suricata-Main] 2025-06-23 11:38:33 Notice: device: eth0: packets: 303031, drops: 37 (0.01%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-23 11:43:35 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-23 11:43:35 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-23 11:43:35 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-23 11:43:35 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-23 11:43:35 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-23 11:43:35 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-23 11:43:35 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-23 11:43:35 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-23 11:43:35 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-23 11:43:35 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-23 11:43:35 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-23 11:43:35 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-23 11:43:35 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-23 11:43:35 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-23 12:49:24 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-23 12:49:25 Info: suricata: time elapsed 3949.800s
+[1 - Suricata-Main] 2025-06-23 12:49:26 Info: counters: Alerts: 24699
+[1 - Suricata-Main] 2025-06-23 12:49:26 Notice: device: eth0: packets: 1044775, drops: 130 (0.01%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-23 12:49:27 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-23 12:49:27 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-23 12:49:27 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-23 12:49:27 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-23 12:49:27 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-23 12:49:27 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-23 12:49:27 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-23 12:49:27 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-23 12:49:27 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-23 12:49:27 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-23 12:49:27 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-23 12:49:27 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-23 12:49:27 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-23 12:49:27 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-24 07:18:54 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-24 07:18:54 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-24 07:18:54 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-24 07:18:54 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-24 07:18:54 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-24 07:18:54 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-24 07:18:54 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-24 07:18:54 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-24 07:18:54 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-24 07:18:54 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-24 07:18:54 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-24 07:18:54 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-24 07:18:54 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-24 07:18:55 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-24 18:43:39 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-24 18:43:39 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-24 18:43:39 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-24 18:43:39 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-24 18:43:39 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-24 18:43:39 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-24 18:43:39 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-24 18:43:39 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-24 18:43:39 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-24 18:43:39 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-24 18:43:39 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-24 18:43:39 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-24 18:43:39 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-24 18:43:39 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-25 08:26:40 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-25 08:26:40 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-25 08:26:40 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-25 08:26:40 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-25 08:26:40 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-25 08:26:40 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-25 08:26:40 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-25 08:26:40 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-25 08:26:40 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-25 08:26:40 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-25 08:26:40 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-25 08:26:40 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-25 08:26:40 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-25 08:26:41 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-06-25 09:31:33 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-06-25 09:31:33 Info: suricata: time elapsed 3892.775s
+[1 - Suricata-Main] 2025-06-25 09:31:33 Info: counters: Alerts: 4118
+[1 - Suricata-Main] 2025-06-25 09:31:33 Notice: device: eth0: packets: 36879, drops: 22 (0.06%), invalid chksum: 0
+[1 - Suricata-Main] 2025-06-25 09:31:53 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-06-25 09:31:53 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2025-06-25 09:31:53 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-06-25 09:31:53 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-06-25 09:31:53 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-06-25 09:31:53 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-7.0.10/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-06-25 09:31:53 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-06-25 09:31:53 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-06-25 09:31:53 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-06-25 09:31:53 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-06-25 09:31:53 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-06-25 09:31:53 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-06-25 09:31:53 Info: runmodes: eth0: creating 8 threads
+[1 - Suricata-Main] 2025-06-25 09:31:54 Notice: threads: Threads created -> W: 8 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-12-29 18:11:41 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-12-29 18:11:41 Info: cpu: CPUs/cores online: 2
+[1 - Suricata-Main] 2025-12-29 18:11:41 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-12-29 18:11:41 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-12-29 18:11:41 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-12-29 18:11:41 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-8.0.2/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-12-29 18:11:41 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-12-29 18:11:41 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-12-29 18:11:41 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0 rules skipped
+[1 - Suricata-Main] 2025-12-29 18:11:41 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-12-29 18:11:41 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-12-29 18:11:41 Info: runmodes: eth0: creating 2 threads
+[16 - W#01-eth0] 2025-12-29 18:11:41 Info: ioctl: eth0: MTU 1500
+[1 - Suricata-Main] 2025-12-29 18:11:42 Notice: threads: Threads created -> W: 2 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-12-29 18:19:24 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-12-29 18:19:25 Info: suricata: time elapsed 463.652s
+[1 - Suricata-Main] 2025-12-29 18:19:25 Info: counters: Alerts: 33
+[1 - Suricata-Main] 2025-12-29 18:19:26 Notice: device: eth0: packets: 29024, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-12-29 18:28:02 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-12-29 18:28:02 Info: cpu: CPUs/cores online: 2
+[1 - Suricata-Main] 2025-12-29 18:28:02 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-12-29 18:28:02 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-12-29 18:28:02 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-12-29 18:28:02 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-8.0.2/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-12-29 18:28:02 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-12-29 18:28:02 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-12-29 18:28:02 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0 rules skipped
+[1 - Suricata-Main] 2025-12-29 18:28:02 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-12-29 18:28:02 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-12-29 18:28:02 Info: af-packet: eth0: unable to find af-packet config for interface "eth0" or "default", using default values
+[1 - Suricata-Main] 2025-12-29 18:28:02 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-12-29 18:28:02 Info: runmodes: eth0: creating 2 threads
+[1 - Suricata-Main] 2025-12-29 18:28:02 Notice: threads: Threads created -> W: 2 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-12-29 18:40:26 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-12-29 18:40:26 Info: suricata: time elapsed 744.227s
+[1 - Suricata-Main] 2025-12-29 18:40:27 Info: counters: Alerts: 10
+[1 - Suricata-Main] 2025-12-29 18:40:27 Notice: device: eth0: packets: 15, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-12-29 18:40:27 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-12-29 18:40:27 Info: cpu: CPUs/cores online: 2
+[1 - Suricata-Main] 2025-12-29 18:40:27 Warning: runmodes: Invalid conf entry found for "threading.detect-thread-ratio".  Using default value of "1".
+[1 - Suricata-Main] 2025-12-29 18:40:27 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-12-29 18:40:28 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-12-29 18:40:28 Warning: counters: global stats config is missing. Stats enabled through legacy stats.log. See https://docs.suricata.io/en/suricata-8.0.2/configuration/suricata-yaml.html#stats
+[1 - Suricata-Main] 2025-12-29 18:40:28 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-12-29 18:40:28 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-12-29 18:40:28 Info: detect: 1 rule files processed. 5 rules successfully loaded, 0 rules failed, 0 rules skipped
+[1 - Suricata-Main] 2025-12-29 18:40:28 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-12-29 18:40:28 Info: detect: 5 signatures processed. 4 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-12-29 18:40:28 Info: af-packet: eth0: unable to find af-packet config for interface "eth0" or "default", using default values
+[1 - Suricata-Main] 2025-12-29 18:40:28 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-12-29 18:40:28 Info: runmodes: eth0: creating 2 threads
+[1 - Suricata-Main] 2025-12-29 18:40:28 Notice: threads: Threads created -> W: 2 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-12-29 18:48:33 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-12-29 18:48:33 Info: suricata: time elapsed 485.218s
+[1 - Suricata-Main] 2025-12-29 18:48:33 Info: counters: Alerts: 0
+[1 - Suricata-Main] 2025-12-29 18:48:33 Notice: device: eth0: packets: 1, drops: 0 (0.00%), invalid chksum: 0

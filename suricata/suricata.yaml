@@ -1,0 +1,62 @@
+%YAML 1.1
+---
+vars:
+  address-groups:
+    HOME_NET: "[172.23.0.0/16]"
+    EXTERNAL_NET: "!$HOME_NET"
+
+default-log-dir: /var/log/suricata
+
+logging:
+  default-log-level: info
+  outputs:
+    - console:
+        enabled: yes
+        type: fast
+    - file:
+        enabled: yes
+        level: info
+        filename: suricata.log
+
+af-packet:
+  - interface: enp0s3
+    cluster-id: 99
+    cluster-type: cluster_flow
+    defrag: yes
+
+outputs:
+  - eve-log:
+      enabled: yes
+      filetype: regular
+      filename: eve.json
+      types:
+        - alert:
+        - http:
+        - dns:
+        - tls:
+        - flow:
+        - ssh
+        - files:
+        - smtp
+
+  - stats:
+      enabled: yes
+      filename: stats.log
+      totals: yes
+      threads: no
+
+  - file-store:
+      enabled: no
+      log-dir: files
+
+rule-files:
+  - /etc/suricata/rules/custom.rules
+
+detect-engine:
+  - profile: medium
+
+threading:
+  set-cpu-affinity: no
+  detect-thread-ratio: 1.0
+
+        - flow

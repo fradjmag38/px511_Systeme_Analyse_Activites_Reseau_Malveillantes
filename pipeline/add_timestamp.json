@@ -1,0 +1,11 @@
+{
+  "description": "Copie timestamp vers @timestamp pour compatibilité Kibana",
+  "processors": [
+    {
+      "set": {
+        "field": "@timestamp",
+        "value": "{{timestamp}}"
+      }
+    }
+  ]
+}

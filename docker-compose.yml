@@ -1,0 +1,58 @@
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.12.1
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "9200:9200"
+    networks:
+      suricata-net:
+        ipv4_address: 172.23.0.5
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.12.1
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    networks:
+      suricata-net:
+        ipv4_address: 172.23.0.15
+
+  filebeat:
+    build:
+      context: .
+      dockerfile: Dockerfile.filebeat
+    container_name: filebeat
+    user: root
+    volumes:
+      - ./suricata/logs:/var/log/suricata:ro
+    depends_on:
+      - elasticsearch
+    networks:
+      suricata-net:
+        ipv4_address: 172.23.0.10
+
+  suricata:
+    image: jasonish/suricata:latest
+    container_name: suricata
+    # command: -c /etc/suricata/suricata.yaml -r /pcap/Thursday-WorkingHours.pcap
+    command: sleep infinity
+    volumes:
+      - ./suricata/logs:/var/log/suricata
+      - ./suricata/rules:/etc/suricata/rules
+      - ./suricata/suricata.yaml:/etc/suricata/suricata.yaml
+      - ./pcap/:/pcap
+
+
+networks:
+  suricata-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.23.0.0/16
