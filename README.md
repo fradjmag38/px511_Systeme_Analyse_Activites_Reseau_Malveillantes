@@ -43,7 +43,7 @@ SIEM_Suricata/
 ```bash
 docker-compose up -d
 ```
-
+Dans le navigateur ```http://127.0.0.1:5601/``` pour accederà l'interface Kibana
 Vérifiez dans `suricata.yaml` que l’interface réseau est bien définie (`enp0s3` dans notre cas).
 
 ---
